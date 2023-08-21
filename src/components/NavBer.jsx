@@ -31,7 +31,7 @@ function NavBer() {
   return (
 
 
-    <div className="flex justify-between items-center w-full h-20 sticky px-4 text-red-500 bg-black">
+    <div className="flex justify-between items-center w-full h-20  px-4 text-[#5A96E3] bg-black">
       <div>
         <h1 className="text-4xl font-signature ml-10">Kaju Saikia</h1>
       </div>
@@ -40,7 +40,7 @@ function NavBer() {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-12 cursor-pointer capitalize select-none text-xl text-red-500 hover:scale-105 duration-200"
+            className="px-12 cursor-pointer capitalize select-none text-xl text-[#5A96E3] hover:scale-105 duration-200"
           >
             {link}
           </li>
@@ -52,7 +52,7 @@ function NavBer() {
 
           {nav && (
 
-            <ul className="flex flex-col  justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-red-500">
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-[#5A96E3]">
           {links.map(({id, link})=>(
             <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl">
               {link}

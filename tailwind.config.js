@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       color:{
-        'text': 'contact',
-        'primary':'#2C3539'
+        'primary':'#176B87'
       }
     },
     fontFamily:{
