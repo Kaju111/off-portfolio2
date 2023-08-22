@@ -24,7 +24,7 @@ function NavBer() {
     },
     {
       id: 5,
-      link: "contact",
+    
     },
   ];
 
@@ -33,21 +33,21 @@ function NavBer() {
 
     <div className="flex justify-between items-center w-full h-20  px-4 text-[#5A96E3] bg-black">
       <div>
-        <h1 className="text-4xl font-signature ml-10">Kaju Saikia</h1>
+        <h1 className="text-4xl font-signature sm:ml-28 ml-4">Kaju Saikia</h1>
       </div>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-12 cursor-pointer capitalize select-none text-xl text-[#5A96E3] hover:scale-105 duration-200"
+            className="px-12 cursor-pointer font-signature  capitalize select-none text-xl text-[#5A96E3] hover:scale-105 duration-200"
           >
             {link}
           </li>
         ))}
       </ul>
       <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 md:hidden">
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={30} /> : <FaBars size={30 } />}
       </div>
 
           {nav && (

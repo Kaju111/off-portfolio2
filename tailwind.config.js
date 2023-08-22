@@ -11,7 +11,8 @@ module.exports = {
       }
     },
     fontFamily:{
-      signature: ["kalam"]
+      signature: ["kalam"],
+      normal:["Josefin Sans"]
     },
     
   },
