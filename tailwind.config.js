@@ -12,7 +12,8 @@ module.exports = {
     },
     fontFamily:{
       signature: ["kalam"],
-      normal:["Josefin Sans"]
+      normal:["Roboto Mono"],
+      primary:["Poppins"]
     },
     
   },
