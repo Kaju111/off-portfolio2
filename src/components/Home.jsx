@@ -1,9 +1,7 @@
 import React from 'react'
 import profile from '../assets/photo3.jpeg'
 import About from './About'
-import Portfolio from './Portfolio'
 import {BsArrowUpRight} from 'react-icons/bs'
-import { Animate } from "react-simple-animate";
 
 function Home() {
 
@@ -16,7 +14,7 @@ function Home() {
         <div className='max-w-screen-lg mx-auto  flex flex-col sm:pt-60 pt-16 items-center justify-center md:flex-row'>
             <div className='max-w-screen-lg mx-auto flex flex-col sm:ml-0 ml-10 justify-center h-full'>
          
-                <h2 className=' text-5xl sm:text-[85px] font-bold text-[#5A96E3] font-primary '>
+                <h2 className=' text-5xl sm:text-[85px] m-auto font-bold text-[#5A96E3] font-primary '>
                 Hello, I'm Kaju
                 </h2>
          
@@ -27,8 +25,8 @@ function Home() {
                     Contact 
                         
                     </button>
-                    <a href='/#portfolio' className='font-signature flex sm:flex sm:flex-row text-3xl ml-6 sm:ml-14 sm:mt-2  mt-7'>
-                        Portfolio <BsArrowUpRight/>
+                    <a href='/work' className='font-signature flex sm:flex sm:flex-row text-3xl ml-6 sm:ml-14 sm:mt-2  mt-7'>
+                        Work <BsArrowUpRight/>
                     </a>
                 </div>
                 </p>
@@ -42,7 +40,6 @@ function Home() {
         
       <div><About/></div>
 
-      <div><Portfolio/></div>
 
     </>
    

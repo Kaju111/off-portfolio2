@@ -1,9 +1,17 @@
 {
     "projects": [
-        {
+        {   "id": 1,
             "title": "NIKE STORE",
             "description": "Full-responsive e-commerce platform.",
-            "url": "https://nike-store-theta-beryl.vercel.app/"
+            "url": "https://nike-store-saikiakaju275-gmailcom.vercel.app/",
+            "tech": ["| ReactJs+Vite |", "| Redux Toolkit |", "| Tailwind |"]
+        },
+        {   "id": 2,
+            "title": "WEATHER APP",
+            "description": "A beautiful weather app...",
+            "url": "https://weather-app-sigma-ten-93.vercel.app/",
+            "tech": ["| ReactJs |", "|  Weather-Api |"]
+            
         }
     ]
 }
