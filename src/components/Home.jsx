@@ -2,6 +2,37 @@ import React from 'react'
 import profile from '../assets/photo3.jpeg'
 import About from './About'
 import {BsArrowUpRight} from 'react-icons/bs'
+import { motion } from "framer-motion"
+
+
+const headingOptions = {
+    
+  initial:{
+    y:"-100%",
+    opacity: 0
+  },
+  whileInView:{
+    y:0,
+    opacity: 1
+  },
+  Transition:{
+    delay: 0.8,
+  }
+}
+const imgOptions = {
+  initial:{
+    scale:0.1,
+    opacity: 0
+  },
+  whileInView:{
+    scale: 1,
+    opacity: 1
+  },
+  Transition:{
+    delay: 0.3,
+  }
+}
+
 
 function Home() {
 
@@ -12,7 +43,7 @@ function Home() {
     <div name='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-900'>
 
         <div className='max-w-screen-lg mx-auto  flex flex-col sm:pt-60 pt-16 items-center justify-center md:flex-row'>
-            <div className='max-w-screen-lg mx-auto flex flex-col sm:ml-0 ml-10 justify-center h-full'>
+            <motion.div {...headingOptions} className='max-w-screen-lg mx-auto flex flex-col sm:ml-0 ml-10 justify-center h-full'>
          
                 <h2 className=' text-5xl sm:text-[85px] m-auto font-bold text-[#5A96E3] font-primary '>
                 Hello, I'm Kaju
@@ -30,11 +61,11 @@ function Home() {
                     </a>
                 </div>
                 </p>
-            </div>
+            </motion.div>
 
-            <div className='border-2 border-[#5A96E3] p-2'>
+            <motion.div {...imgOptions} className='border-2 border-[#5A96E3] p-2'>
               <img src={profile} alt="my profile" className='rounded-2xl  sm:h-96 sm:w-[390px] sm:mx-auto h-70 w-[300px] '/>
-            </div>
+            </motion.div>
         </div>
         </div>
         

@@ -9,7 +9,7 @@ function NavBer() {
   return (
 
 
-    <div className="flex justify-between items-center w-full h-20 md:fixed   px-4 text-[#5A96E3] bg-black">
+    <div className="flex justify-between items-center w-full h-20 md:fixed md:z-10 px-4 text-[#5A96E3] bg-black">
       <div>
         <h1 className="text-5xl font-signature m-auto">Kaju Saikia</h1>
       </div>
